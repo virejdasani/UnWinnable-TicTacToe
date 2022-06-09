@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Radio Canada', sans-serif;
+}
+
+body {
+  background-color: rgb(37, 37, 37);
+  color: rgb(255, 255, 255);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+.header h1 {
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 35px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn,
+.h-btn {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 75px;
+  margin: 2px;
+  width: 75px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.btn:hover,
+.h-btn:hover {
+  cursor: pointer;
+  background-color: rgb(240, 240, 240);
+}
+
+.btn:disabled,
+.h-btn:disabled {
+  color: black;
+  cursor: no-drop;
+}
+
+.result {
+  text-align: center;
+}
+
+.reset {
+  text-align: center;
+}
+
+input[type="text"][disabled] {
+  background-color: white;
+}
+
+#reset {
+  border: 1px solid black;
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-size: 17px;
+  margin: 35px;
+  transition: all 0.1s ease-in-out;
+}
+
+#reset:hover {
+  color: white;
+  background-color: black;
+}
+
+.hidden:hover {
+  background-color: transparent;
+  cursor: default;
+}
+
+.hidden {
+  background-color: transparent;
+  border: none;
+  cursor: default;
+  pointer-events: none;
+}
